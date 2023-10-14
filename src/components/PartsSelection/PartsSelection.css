@@ -1,26 +1,21 @@
-.ag-format-container {
-  width: 1142px;
-  margin: 0 auto;
-}
-
 .parts__selection__container {
   height: 100vh;
   width: 100%;
+  display: flex;
+  background-color: #dafffb;
+  flex-direction: column;
 }
+
+.parts__selection__carousel-wrap {
+  width: 100%;
+  height: 85%;
+  display: flex;
+}
+
 .carousel-container {
   width: 100%;
 }
 
-.slider {
-  margin: 0 20px;
-  overflow: "hidden";
-  padding: 2rem 0;
-}
-
-.slider img {
-  width: 100%;
-  border-radius: 10px;
-}
 
 .react-multi-carousel-list {
   padding: 0rem 0 2rem 0;
@@ -29,60 +24,47 @@
 
 .react-multi-carousel-track {
   display: flex;
+  height: 100%;
 }
 
-.custom-dot-list-style button {
-  border: none;
-  background: rgb(255, 68, 68);
-}
-.react-multi-carousel-dot.react-multi-carousel-dot--active button {
-  background: rgb(255, 68, 68) !important;
+ul,
+li {
+  list-style: none;
 }
 
-.ag-courses_box {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: start;
-  -ms-flex-align: start;
-  align-items: flex-start;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
 
-  padding: 50px 0;
-}
-.ag-courses_item {
-  -ms-flex-preferred-size: calc(33.33333% - 30px);
-  flex-basis: calc(33.33333% - 30px);
+
+.parts__carousel-card {
 
   margin: 0 15px 30px;
-
   overflow: hidden;
+ width: 300px;
+ height: 300px;
 
   border-radius: 28px;
   box-shadow: 0 0 10px 5px;
   box-shadow: -5px -5px 30px 5px red, 5px 5px 30px 5px blue;
 }
-.ag-courses-item_link {
+.parts__carousel-card-wrap {
   display: block;
   padding: 30px 20px;
-  background-color: #121212;
+  background-color: #04364a;
 
   overflow: hidden;
 
   position: relative;
 }
-.ag-courses-item_link:hover,
-.ag-courses-item_link:hover .ag-courses-item_date {
+.parts__carousel-card-wrap:hover,
+.parts__carousel-card-wrap:hover {
   text-decoration: none;
   color: #fff;
 }
-.ag-courses-item_link:hover .ag-courses-item_bg {
+.parts__carousel-card-wrap:hover .parts__carousel-card-bg {
   -webkit-transform: scale(10);
   -ms-transform: scale(10);
   transform: scale(10);
 }
-.ag-courses-item_title {
+.parts__carousel-card-title {
   min-height: 87px;
   margin: 0 0 25px;
 
@@ -95,25 +77,23 @@
   z-index: 2;
   position: relative;
 }
-.ag-courses-item_date-box {
+.parts__carousel-card-img-wrap {
   font-size: 18px;
   color: #fff;
 
   z-index: 2;
   position: relative;
 }
-.ag-courses-item_date {
-  font-weight: bold;
-  color: #f9b234;
 
-  -webkit-transition: color 0.5s ease;
-  -o-transition: color 0.5s ease;
-  transition: color 0.5s ease;
+.parts__carousel-card-img {
+  height: 100px;
+  width: 100px;
 }
-.ag-courses-item_bg {
+
+.parts__carousel-card-bg {
   height: 128px;
   width: 128px;
-  background-color: #f9b234;
+  background-color: #64ccc5;
 
   z-index: 1;
   position: absolute;
@@ -126,52 +106,38 @@
   -o-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
-.ag-courses_item:nth-child(2n) .ag-courses-item_bg {
-  background-color: #3ecd5e;
-}
-.ag-courses_item:nth-child(3n) .ag-courses-item_bg {
-  background-color: #e44002;
-}
-.ag-courses_item:nth-child(4n) .ag-courses-item_bg {
-  background-color: #952aff;
-}
-.ag-courses_item:nth-child(5n) .ag-courses-item_bg {
-  background-color: #cd3e94;
-}
-.ag-courses_item:nth-child(6n) .ag-courses-item_bg {
-  background-color: #4c49ea;
-}
+
 
 @media only screen and (max-width: 979px) {
-  .ag-courses_item {
+  .parts__carousel-card {
     -ms-flex-preferred-size: calc(50% - 30px);
     flex-basis: calc(50% - 30px);
   }
-  .ag-courses-item_title {
+  .parts__carousel-card-title {
     font-size: 24px;
   }
 }
 
 @media only screen and (max-width: 767px) {
-  .ag-format-container {
+  .parts__selection__carousel-wrap {
     width: 96%;
   }
 }
 @media only screen and (max-width: 639px) {
-  .ag-courses_item {
+  .parts__carousel-card {
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
   }
-  .ag-courses-item_title {
+  .parts__carousel-card-title {
     min-height: 72px;
     line-height: 1;
 
     font-size: 24px;
   }
-  .ag-courses-item_link {
+  .parts__carousel-card-wrap {
     padding: 22px 40px;
   }
-  .ag-courses-item_date-box {
+  .parts__carousel-card-img-wrap {
     font-size: 16px;
   }
 }
