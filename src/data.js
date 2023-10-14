@@ -28,7 +28,7 @@ export const cabinetPartsData = [
     {
         id:2,
         imgURL: book2,
-        title: "Reference Book",
+        title: "Library Book",
         variant:"Books"
     },
     {
