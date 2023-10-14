@@ -1,11 +1,11 @@
-import React, { useCallback, useState } from "react";
+import React, { useCallback, useEffect, useState } from "react";
 import "./Cabinet.css";
 import { useDrop } from "react-dnd";
 import dress1 from "../../../assets/girl-dress-1.png";
 import IndividualPartsCard from "../IndividualPartsCard/IndividualPartsCard";
 import { cabinetPartsData } from "../../../data";
 
-const Cabinet = () => {
+const Cabinet = ({defaultCabinetData}) => {
   const [cabinetItems, setCabinetItems] = useState([
     {
       variant: "Books",
@@ -37,6 +37,7 @@ const Cabinet = () => {
     },
   ]);
 
+
   const [{ isOver }, drop] = useDrop(() => ({
     accept: "image",
     drop: (item) => addImageToBoard(item.id, item.variant),
@@ -45,6 +46,8 @@ const Cabinet = () => {
       isOver: !!montior.isOver(),
     }),
   }));
+
+
 
   console.log(cabinetItems, "cabinetItems");
 

@@ -1,0 +1,43 @@
+.cabinet__home__page{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: #EEEEEE;
+
+}
+
+.cabinet__home__page-content{
+    height: 85%;
+    width: 100%;
+    display: flex;
+  
+}
+
+.home__page__description-wrap {
+    width: 50%;
+    height: 100%;
+
+}
+
+.home__page__description-wrap .heading {
+    font-size: 65px;
+    font-weight : 700;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 25px;
+    line-height: 0.9;
+    
+}
+
+.home__page__description-wrap .sub-text {
+    max-width: 630px;
+    font-size: 25px;
+    line-height: 1.4;
+    margin-left: auto;
+    margin-right: auto;
+    opacity: 0.7;
+}
+
+

@@ -6,6 +6,7 @@ import {
   PartsSelection,
   ResultScreen,
 } from "./components";
+import './App.css';
 
 
 
