@@ -7,7 +7,7 @@ const CabinetFooter = () => {
     }
   return (
     <div className='cabinet__footer__wrap'>
-    <button className='cabinet__footer-btn' onClick={(e) => handleNavigation()}> Change</button>
+    <button className='cabinet__footer-btn' onClick={(e) => handleNavigation()}> Next</button>
       
     </div>
   );
