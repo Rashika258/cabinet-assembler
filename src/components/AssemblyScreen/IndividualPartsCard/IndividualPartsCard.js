@@ -20,15 +20,10 @@ const IndividualPartsCard = ({ part }) => {
     >
       <div class="article-wrapper">
         <figure>
-          <img src={part.url} alt="" />
+          <img src={part.imgURL} alt="" />
         </figure>
         <div class="article-body">
-          <h2>This is some title</h2>
-          <p>
-            Curabitur convallis ac quam vitae laoreet. Nulla mauris ante,
-            euismod sed lacus sit amet, congue bibendum eros. Etiam mattis
-            lobortis porta. Vestibulum ultrices iaculis enim imperdiet egestas.
-          </p>
+          <h2>{part.title}</h2>
         </div>
       </div>
     </article>

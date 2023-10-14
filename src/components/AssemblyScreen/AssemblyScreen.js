@@ -5,6 +5,7 @@ import { DndProvider } from "react-dnd";
 import { HTML5Backend } from "react-dnd-html5-backend";
 import Cabinet from "./Cabinet/Cabinet";
 import IndividualPartsCard from "./IndividualPartsCard/IndividualPartsCard";
+import { cabinetPartsData } from "../../data";
 
 export default function AssemblyScreen() {
   const partsList = [
@@ -26,7 +27,7 @@ export default function AssemblyScreen() {
     <DndProvider backend={HTML5Backend}>
       <section className="assembly__screen-container">
         <section className="assembly__screen-container-left-wrap">
-          {partsList.map((part, index) => {
+          {cabinetPartsData.map((part, index) => {
             return <IndividualPartsCard part={part} />;
           })}
         </section>
