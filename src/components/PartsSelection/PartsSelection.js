@@ -40,7 +40,7 @@ const PartsSelection = () => {
           autoPlaySpeed={3000}
           centerMode={false}
           className=""
-          containerClass="container"
+          containerClass=""
           dotListClass=""
           draggable
           focusOnSelect={false}
