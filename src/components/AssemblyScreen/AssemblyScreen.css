@@ -2,24 +2,40 @@
   width: 100%;
   height: 100vh;
   display: flex;
+  background-color: #dafffb;
 }
 
 .assembly__screen-container-left-wrap {
-  width: 30%;
+  width: 40%;
   height: 100%;
   overflow-y: auto;
-  /* display: grid;
-  max-width: 1200px;
-  margin-inline: auto;
-  padding-inline: 24px;
-  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
-  gap: 24px; */
+  
 }
 
+.assembly__screen-container-left-wrap {
+  -ms-overflow-style: none;  /* Internet Explorer 10+ */
+  scrollbar-width: none;  /* Firefox */
+}
+.assembly__screen-container-left-wrap::-webkit-scrollbar { 
+  display: none;  /* Safari and Chrome */
+}
+
+.assembly__screen-container-right-wrap .cabinet__wrap {
+  height: 85% !important;
+width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-right: 40px;
+}
+
+
 .assembly__screen-container-right-wrap {
-  width: 70%;
+  width: 60%;
   height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
+
 }

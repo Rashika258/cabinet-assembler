@@ -42,11 +42,10 @@ li {
 
   border-radius: 28px;
   box-shadow: 0 0 10px 5px;
-
 }
 
 .parts__carousel-card-selected {
-  box-shadow: -5px -5px 30px 5px #176B87, 5px 5px 30px 5px rgb(103, 140, 166);
+  box-shadow: -5px -5px 30px 5px #176b87, 5px 5px 30px 5px rgb(103, 140, 166);
 }
 .parts__carousel-card-wrap {
   display: block;
@@ -69,20 +68,16 @@ li {
   border-radius: 28px;
 }
 .parts__carousel-card-title {
-
   margin: 0 0 60px;
-
 
   font-weight: bold;
   font-size: 35px;
   color: #fff;
-font-family: 'Open Sans';
+  font-family: "Open Sans";
   z-index: 2;
   position: relative;
 }
 .parts__carousel-card-img-wrap {
-
-
   z-index: 2;
   position: relative;
   display: flex;

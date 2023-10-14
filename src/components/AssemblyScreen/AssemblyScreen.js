@@ -5,6 +5,7 @@ import { HTML5Backend } from "react-dnd-html5-backend";
 import Cabinet from "./Cabinet/Cabinet";
 import IndividualPartsCard from "./IndividualPartsCard/IndividualPartsCard";
 import { cabinetPartsData } from "../../data";
+import CabinetFooter from "../CabinetFooter/CabinetFooter";
 
 export default function AssemblyScreen() {
 
@@ -18,7 +19,8 @@ export default function AssemblyScreen() {
         </section>
         <section className="assembly__screen-container-right-wrap">
           <Cabinet />
-        </section>
+          <CabinetFooter />
+          </section>
       </section>
     </DndProvider>
   );

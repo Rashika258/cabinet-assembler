@@ -76,10 +76,8 @@ const CompleteCabinet = () => {
               {cabinet.objects &&
                 cabinet.objects.length > 0 &&
                 cabinet.objects.map((object, objectIndex) => {
-                  return (
-                    
-                      <img className='cabinet__image' src={object.imgURL} alt='' />
-                 
+                  return (     
+                      <img className='cabinet__image' src={object.imgURL} alt={object.title} />       
                   );
                 })}
             </div>

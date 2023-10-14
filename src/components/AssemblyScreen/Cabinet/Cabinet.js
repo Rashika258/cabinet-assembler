@@ -70,6 +70,7 @@ const Cabinet = ({defaultCabinetData}) => {
   );
 
   return (
+    <div className='cabinet__wrap' ref={drop} >
     <div className="cabinet" ref={drop}>
       {cabinetItems &&
         cabinetItems.length > 0 &&
@@ -83,9 +84,7 @@ const Cabinet = ({defaultCabinetData}) => {
                 cabinet.objects.length > 0 &&
                 cabinet.objects.map((object, objectIndex) => {
                   return (
-                    <figure id={objectIndex}>
-                      <img src={object.imgURL} alt="" />
-                    </figure>
+                    <img className='cabinet__image' src={object.imgURL} alt={object.title} /> 
                   );
                 })}
             </div>
@@ -93,6 +92,7 @@ const Cabinet = ({defaultCabinetData}) => {
             <div class="front"></div>
           </div>
         ))}
+    </div>
     </div>
   );
 };
