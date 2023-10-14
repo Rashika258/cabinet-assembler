@@ -16,18 +16,29 @@
   
 }
 
+.cabinet__home__page-content .cabinet__wrap {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-right: 40px;
+}
+
 .home__page__description-wrap {
     width: 50%;
     height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-left: 40px;
 
 }
 
 .home__page__description-wrap .heading {
     font-size: 65px;
     font-weight : 700;
-    max-width: 800px;
-    margin-left: auto;
-    margin-right: auto;
     margin-bottom: 25px;
     line-height: 0.9;
     font-family: 'Open Sans';
@@ -36,12 +47,13 @@
 }
 
 .home__page__description-wrap .sub-text {
-    max-width: 630px;
     font-size: 25px;
     line-height: 1.4;
     margin-left: auto;
     margin-right: auto;
     opacity: 0.7;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: justify;
 }
 
 

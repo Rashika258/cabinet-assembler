@@ -8,12 +8,13 @@
 }
 
 .cabinet__footer-btn {
+    width: 200px;
   display: block;
   margin: 20px 0;
   min-height: 50px;
   padding: 13px 24px;
   font-family: 'Open Sans';
-  font-size: 16px;
+  font-size: 20px;
   line-height: 20px;
   font-weight: bold;
   text-transform: uppercase;
