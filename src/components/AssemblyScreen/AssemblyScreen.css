@@ -1,12 +1,13 @@
 .assembly__screen-container {
   width: 100%;
-  height: 100%;
+  height: 100vh;
   display: flex;
 }
 
 .assembly__screen-container-left-wrap {
   width: 30%;
   height: 100%;
+  overflow-y: auto;
   /* display: grid;
   max-width: 1200px;
   margin-inline: auto;
@@ -18,4 +19,7 @@
 .assembly__screen-container-right-wrap {
   width: 70%;
   height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }

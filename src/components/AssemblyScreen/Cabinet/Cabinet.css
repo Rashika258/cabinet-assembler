@@ -1,9 +1,9 @@
 .cabinet {
   position: absolute;
   width: 460px;
-  height: 1000px;
+  height: 100%;
   background-color: #45221c;
-  top: 40px;
+  /* top: 40px; */
   left: 30%;
   border: 10px solid #69342b;
   box-sizing: border-box;
