@@ -60,6 +60,8 @@
   overflow: hidden;
 
   border-radius: 28px;
+  box-shadow: 0 0 10px 5px;
+  box-shadow: -5px -5px 30px 5px red, 5px 5px 30px 5px blue;
 }
 .ag-courses-item_link {
   display: block;
