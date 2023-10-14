@@ -5,16 +5,18 @@ import { AssemblyScreen, CabinetDescription, PartsSelection, ResultScreen } from
 
 const App = () => {
   return (
-    <div className="App">
     <Router>
+
+  
       <Routes>
-        <Route path="/" exact component={CabinetDescription} />
-        <Route path="/parts-selection" component={PartsSelection} />
-        <Route path="/assembly" component={AssemblyScreen} />
-        <Route path="/final-product" component={ResultScreen} />
+        <Route path="/"  element={<AssemblyScreen/>} />
+        <Route path="/parts-selection" element={<PartsSelection/>} />
+        <Route path="/assembly" element={<AssemblyScreen/>} />
+        <Route path="/final-product" element={<ResultScreen/>} />
       </Routes>
-    </Router>
-  </div>
+   
+
+  </Router>
   );
 }
 
