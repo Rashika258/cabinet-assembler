@@ -1,35 +1,49 @@
-import React from 'react';
-import './AssemblyScreen.css';
-import girlD1 from '../../assets/girl-dress-1.png';
+import React, { useCallback, useState } from "react";
+import "./AssemblyScreen.css";
+import { DragDropContext } from "react-beautiful-dnd";
+import dress1 from "../../assets/girl-dress-1.png";
 
-const AssemblyScreen = () => {
+import { useDrop } from "react-dnd";
+
+import Cabinet from "./Cabinet/Cabinet";
+import IndividualPartsCard from "./IndividualPartsCard/IndividualPartsCard";
+import { DndProvider } from "react-dnd";
+import { HTML5Backend } from "react-dnd-html5-backend";
+
+export default function AssemblyScreen() {
+
+  const partsList = [
+    {
+      id: 1,
+      url: dress1,
+    },
+    {
+      id: 2,
+      url: dress1,
+    },
+    {
+      id: 3,
+      url: dress1,
+    },
+  ];
+
+
+
   return (
-    <section className='assembly__screen-container'>
-    <section className='assembly__screen-container-left-wrap'>
+    <DndProvider backend={HTML5Backend}>
+      <section className="assembly__screen-container">
+        <section className="assembly__screen-container-left-wrap">
+          {partsList.map((part, index) => {
+            return <IndividualPartsCard part={part} />;
+          })}
+        </section>
+        <section className="assembly__screen-container-right-wrap">
+       
+          <Cabinet />
+        </section>
+      </section>
+    </DndProvider>
 
-    <article className='individual__selected__parts__card'>
-    <div class="article-wrapper">
-      <figure>
-        <img src={girlD1} alt="" />
-      </figure>
-      <div class="article-body">
-        <h2>This is some title</h2>
-        <p>
-          Curabitur convallis ac quam vitae laoreet. Nulla mauris ante, euismod sed lacus sit amet, congue bibendum eros. Etiam mattis lobortis porta. Vestibulum ultrices iaculis enim imperdiet egestas.
-        </p>
- 
-      </div>
-    </div>
-  </article>
-
-      App
-    </section>
-    <section className='assembly__screen-container-right-wrap'>
-      App
-    </section>
-      App
-    </section>
+    // </DragDropContext>
   );
 }
-
-export default AssemblyScreen;
