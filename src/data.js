@@ -23,85 +23,85 @@ export const cabinetPartsData = [
         id:1,
         imgURL: book1,
         title: "Study Book",
-        variant:"Book"
+        variant:"Books"
     },
     {
         id:2,
         imgURL: book2,
         title: "Reference Book",
-        variant:"Book"
+        variant:"Books"
     },
     {
         id:3,
         imgURL: book3,
         title: "Text Book",
-        variant:"Book"
+        variant:"Books"
     },
     {
         id:4,
         imgURL: box1,
         title: "Gift by Friend",
-        variant:"gift"
+        variant:"Gifts"
     },
     {
         id:4,
         imgURL: box2,
         title: "Gift by Father",
-        variant:"gift"
+        variant:"Gifts"
     },
     {
         id:5,
         imgURL: box3,
         title: "Gift by Mother",
-        variant:"gift"
+        variant:"Gifts"
     },
     {
         id:6,
         imgURL: gdress1,
         title: "Dress",
-        variant:"girl-dress"
+        variant:"Female Dresses"
     },
     {
         id:7,
         imgURL: gdress2,
         title: "Dress",
-        variant:"girl-dress"
+        variant:"Female Dresses"
     },
     {
         id:8,
         imgURL: gdress3,
         title: "Dress",
-        variant:"girl-dress"
+        variant:"Female Dresses"
     },
     {
         id:9,
         imgURL: bdress1,
         title: "Dress",
-        variant:"boy-dress"
+        variant:"Male Dresses"
     },
     {
         id:10,
         imgURL: bdress2,
         title: "Dress",
-        variant:"boy-dress"
+        variant:"Male Dresses"
     },
     {
         id:11,
         imgURL: perfume1,
         title: "Perfume",
-        variant:"perfume"
+        variant:"Perfumes"
     },
     {
         id:12,
         imgURL: perfume2,
         title: "Perfume",
-        variant:"perfume"
+        variant:"Perfumes"
     },
     {
         id:13,
         imgURL: perfume3,
         title: "Perfume",
-        variant:"perfume"
+        variant:"Perfumes"
     },
     {
         id:14,
@@ -125,13 +125,13 @@ export const cabinetPartsData = [
         id:17,
         imgURL: toy1,
         title: "Toy",
-        variant:"toy"
+        variant:"Toys"
     },
     {
         id:18,
         imgURL: toy2,
         title: "Toy",
-        variant:"toy"
+        variant:"Toys"
     },
     
     

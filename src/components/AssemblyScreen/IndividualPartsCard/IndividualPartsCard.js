@@ -3,10 +3,9 @@ import { useDrag } from "react-dnd";
 import "./IndividualPartsCard.css";
 
 const IndividualPartsCard = ({ part }) => {
-  console.log(part);
   const [{ isDragging }, drag] = useDrag(() => ({
     type: "image",
-    item: { id: part.id },
+    item: { id: part.id , variant: part.variant},
     collect: (monitor) => ({
       isDragging: !!monitor.isDragging(),
     }),
