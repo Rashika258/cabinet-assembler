@@ -1,17 +1,12 @@
-import React, { useCallback, useState } from "react";
-import "./AssemblyScreen.css";
-import { DragDropContext } from "react-beautiful-dnd";
+import React from "react";
 import dress1 from "../../assets/girl-dress-1.png";
-
-import { useDrop } from "react-dnd";
-
-import Cabinet from "./Cabinet/Cabinet";
-import IndividualPartsCard from "./IndividualPartsCard/IndividualPartsCard";
+import "./AssemblyScreen.css";
 import { DndProvider } from "react-dnd";
 import { HTML5Backend } from "react-dnd-html5-backend";
+import Cabinet from "./Cabinet/Cabinet";
+import IndividualPartsCard from "./IndividualPartsCard/IndividualPartsCard";
 
 export default function AssemblyScreen() {
-
   const partsList = [
     {
       id: 1,
@@ -27,8 +22,6 @@ export default function AssemblyScreen() {
     },
   ];
 
-
-
   return (
     <DndProvider backend={HTML5Backend}>
       <section className="assembly__screen-container">
@@ -38,12 +31,9 @@ export default function AssemblyScreen() {
           })}
         </section>
         <section className="assembly__screen-container-right-wrap">
-       
           <Cabinet />
         </section>
       </section>
     </DndProvider>
-
-    // </DragDropContext>
   );
 }
