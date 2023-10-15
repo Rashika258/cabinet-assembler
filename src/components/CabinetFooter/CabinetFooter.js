@@ -30,8 +30,9 @@ const CabinetFooter = ({ selectedItems }) => {
     } else {
       return;
     }
-    console.log('location', location);
   };
+
+
   return (
     <div className='cabinet__footer__wrap'>
       <button
@@ -39,7 +40,8 @@ const CabinetFooter = ({ selectedItems }) => {
         className='cabinet__footer-btn'
         onClick={(e) => handleNavigation()}
       >
-        Next
+      {location.pathname === '/' ? 'Start' : location.pathname === '/parts-selection' ? 'Assemble' : location.pathname === '/assembly'? 'Finish':''}
+        
       </button>
     </div>
   );

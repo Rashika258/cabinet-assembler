@@ -9,10 +9,9 @@ import './PartsSelection.css';
 
 export default function PartsSelection() {
   const carouselRef = useRef(null);
-  const { cabinetSharedState, setCabinetSharedState } =
+  const { cabinetSharedState } =
     useCabinetStateContext();
   const [selectedItems, setSelectedItems] = useState([]);
-  console.log('cabinetData', cabinetSharedState);
 
   const handlePrevious = () => {
     const isAtFirstSlide = carouselRef.current.state.currentSlide === 0;
@@ -68,7 +67,6 @@ export default function PartsSelection() {
       carouselState: { currentSlide },
     } = rest;
 
-    console.log('currentSlide', currentSlide);
 
     return (
       <div className='button__wrap'>
@@ -114,7 +112,6 @@ export default function PartsSelection() {
     setSelectedItems(items);
   };
 
-  console.log('selectedItems', selectedItems);
   return (
     <div className='parts__selection__container'>
       <div className='parts__selection__carousel-wrap'>

@@ -3,7 +3,7 @@ import { CompleteCabinet } from '../index';
 
 const ResultScreen = () => {
   return (
-    <div className='cabinet__home__page'>
+    <div className='cabinet__home__page  result__screen'>
       <div className='cabinet__home__page-content'>
         <div className='home__page__description-wrap'>
           <h1 className='heading'>Cabinet Assembler</h1>

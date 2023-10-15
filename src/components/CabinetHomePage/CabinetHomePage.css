@@ -31,3 +31,33 @@
   flex-direction: column;
   padding-left: 40px;
 }
+
+@media only screen and (max-width: 1290px) {
+  .cabinet__home__page-content {
+    flex-direction: column;
+  }
+
+  .home__page__description-wrap {
+    width: 100% !important;
+    padding-right: 40px !important;
+  }
+
+  .cabinet__wrap {
+    width: 100% !important;
+    padding-left: 40px !important;
+  }
+
+  .cabinet__footer__wrap {
+    justify-content: center !important;
+    padding: 0px 40px !important;
+  }
+
+  .cabinet__home__page-content .cabinet {
+    left: 17% !important;
+  }
+
+  .result__screen.cabinet__home__page .cabinet {
+    left: 20% !important;
+  }
+
+}

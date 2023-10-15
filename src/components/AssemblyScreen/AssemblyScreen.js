@@ -40,8 +40,6 @@ export default function AssemblyScreen() {
     },
   ]);
 
-  console.log('cabinetSharedState', cabinetSharedState);
-
   const checkSelectedItems = () => {
     const idSet = new Set();
     cabinetItems.forEach((item) => {

@@ -13,7 +13,6 @@ const CabinetWithDropZone = ({ cabinetItems, setCabinetItems }) => {
     }),
   }));
 
-  console.log(cabinetItems, 'cabinetItems');
 
   const addImageToBoard = useCallback(
     (id, variant) => {

@@ -4,7 +4,7 @@ import './Cabinet.css';
 
 const CompleteCabinet = () => {
   const { cabinetSharedState } = useCabinetStateContext();
-  console.log('cabinetData', cabinetSharedState);
+
   const [cabinetItems, setCabinetItems] = useState([
     {
       variant: 'Books',
