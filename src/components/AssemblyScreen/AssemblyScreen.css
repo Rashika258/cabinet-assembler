@@ -9,26 +9,24 @@
   width: 40%;
   height: 100%;
   overflow-y: auto;
-  
 }
 
 .assembly__screen-container-left-wrap {
-  -ms-overflow-style: none;  /* Internet Explorer 10+ */
-  scrollbar-width: none;  /* Firefox */
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+  scrollbar-width: none; /* Firefox */
 }
-.assembly__screen-container-left-wrap::-webkit-scrollbar { 
-  display: none;  /* Safari and Chrome */
+.assembly__screen-container-left-wrap::-webkit-scrollbar {
+  display: none; /* Safari and Chrome */
 }
 
 .assembly__screen-container-right-wrap .cabinet__wrap {
   height: 85% !important;
-width: 100%;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
   padding-right: 40px;
 }
-
 
 .assembly__screen-container-right-wrap {
   width: 60%;
@@ -37,5 +35,4 @@ width: 100%;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-
 }

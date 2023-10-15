@@ -22,116 +22,116 @@ export const cabinetPartsData = [
     {
         id:1,
         imgURL: book1,
-        title: "Study Book",
-        variant:"Books"
+        title: 'Study Book',
+        variant:'Books'
     },
     {
         id:2,
         imgURL: book2,
-        title: "Library Book",
-        variant:"Books"
+        title: 'Library Book',
+        variant:'Books'
     },
     {
         id:3,
         imgURL: book3,
-        title: "Text Book",
-        variant:"Books"
+        title: 'Text Book',
+        variant:'Books'
     },
     {
         id:4,
         imgURL: box1,
-        title: "Gift by Friend",
-        variant:"Gifts"
-    },
-    {
-        id:4,
-        imgURL: box2,
-        title: "Gift by Father",
-        variant:"Gifts"
+        title: 'Gift by Friend',
+        variant:'Gifts'
     },
     {
         id:5,
-        imgURL: box3,
-        title: "Gift by Mother",
-        variant:"Gifts"
+        imgURL: box2,
+        title: 'Gift by Father',
+        variant:'Gifts'
     },
     {
         id:6,
-        imgURL: gdress1,
-        title: "Dress",
-        variant:"Female Dresses"
+        imgURL: box3,
+        title: 'Gift by Mother',
+        variant:'Gifts'
     },
     {
         id:7,
-        imgURL: gdress2,
-        title: "Dress",
-        variant:"Female Dresses"
+        imgURL: gdress1,
+        title: 'Dress',
+        variant:'Female Dresses'
     },
     {
         id:8,
-        imgURL: gdress3,
-        title: "Dress",
-        variant:"Female Dresses"
+        imgURL: gdress2,
+        title: 'Dress',
+        variant:'Female Dresses'
     },
     {
         id:9,
-        imgURL: bdress1,
-        title: "Dress",
-        variant:"Male Dresses"
+        imgURL: gdress3,
+        title: 'Dress',
+        variant:'Female Dresses'
     },
     {
         id:10,
-        imgURL: bdress2,
-        title: "Dress",
-        variant:"Male Dresses"
+        imgURL: bdress1,
+        title: 'Dress',
+        variant:'Male Dresses'
     },
     {
         id:11,
-        imgURL: perfume1,
-        title: "Perfume",
-        variant:"Perfumes"
+        imgURL: bdress2,
+        title: 'Dress',
+        variant:'Male Dresses'
     },
     {
         id:12,
-        imgURL: perfume2,
-        title: "Perfume",
-        variant:"Perfumes"
+        imgURL: perfume1,
+        title: 'Perfume',
+        variant:'Perfumes'
     },
     {
         id:13,
-        imgURL: perfume3,
-        title: "Perfume",
-        variant:"Perfumes"
+        imgURL: perfume2,
+        title: 'Perfume',
+        variant:'Perfumes'
     },
     {
         id:14,
-        imgURL: vase1,
-        title: "Plant",
-        variant:"Vase"
+        imgURL: perfume3,
+        title: 'Perfume',
+        variant:'Perfumes'
     },
     {
         id:15,
-        imgURL: vase2,
-        title: "Plant",
-        variant:"Vase"
+        imgURL: vase1,
+        title: 'Plant',
+        variant:'Vase'
     },
     {
         id:16,
-        imgURL: vase3,
-        title: "Plant",
-        variant:"Vase"
+        imgURL: vase2,
+        title: 'Plant',
+        variant:'Vase'
     },
     {
         id:17,
-        imgURL: toy1,
-        title: "Toy",
-        variant:"Toys"
+        imgURL: vase3,
+        title: 'Plant',
+        variant:'Vase'
     },
     {
         id:18,
+        imgURL: toy1,
+        title: 'Toy',
+        variant:'Toys'
+    },
+    {
+        id:19,
         imgURL: toy2,
-        title: "Toy",
-        variant:"Toys"
+        title: 'Toy',
+        variant:'Toys'
     },
     
     

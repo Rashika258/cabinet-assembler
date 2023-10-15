@@ -8,12 +8,12 @@
 }
 
 .cabinet__footer-btn {
-    width: 200px;
+  width: 200px;
   display: block;
   margin: 20px 0;
   min-height: 50px;
   padding: 13px 24px;
-  font-family: 'Open Sans';
+  font-family: "Open Sans";
   font-size: 20px;
   line-height: 20px;
   font-weight: bold;
@@ -28,6 +28,12 @@
   cursor: pointer;
   transition: 0.3s ease-in-out;
   transition-property: background, color;
+}
+
+button[disabled="disabled"],
+button:disabled {
+  opacity: 0.5;
+  cursor: default;
 }
 
 .cabinet__footer-btn {

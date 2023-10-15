@@ -32,8 +32,8 @@
   width: 100%;
   position: absolute;
   align-items: center;
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 .right__arrow-wrap {
@@ -121,7 +121,7 @@ li {
   font-weight: bold;
   font-size: 35px;
   color: #fff;
-  font-family: "Open Sans";
+  font-family: 'Open Sans';
   z-index: 2;
   position: relative;
 }
