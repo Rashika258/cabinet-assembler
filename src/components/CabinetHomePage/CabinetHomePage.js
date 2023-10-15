@@ -1,9 +1,12 @@
-import React from "react";
-import CompleteCabinet from "./CompleteCabinet/CompleteCabinet";
+import React, { useContext } from "react";
+import CompleteCabinet from "./CompleteCabinet";
 import "./CabinetHomePage.css";
 import CabinetFooter from "../CabinetFooter/CabinetFooter";
+import { useCabinetStateContext } from "../../context";
+import Cabinet from "../AssemblyScreen/Cabinet/Cabinet";
 
 const CabinetHomePage = () => {
+
   return (
     <div className="cabinet__home__page">
       <div className="cabinet__home__page-content">

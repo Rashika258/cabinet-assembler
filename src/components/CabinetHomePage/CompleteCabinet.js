@@ -1,8 +1,12 @@
 import React, { useCallback, useEffect, useState } from 'react';
-import '../../AssemblyScreen/Cabinet/Cabinet.css';
-import { cabinetPartsData } from '../../../data';
+import '../AssemblyScreen/Cabinet/Cabinet.css';
+import { cabinetPartsData } from '../../data';
+import { useCabinetStateContext } from '../../context';
 
 const CompleteCabinet = () => {
+  
+  const {cabinetSharedState, setCabinetSharedState} = useCabinetStateContext()
+  console.log("cabinetData", cabinetSharedState, );
   const [cabinetItems, setCabinetItems] = useState([
     {
       variant: 'Books',
@@ -55,10 +59,10 @@ const CompleteCabinet = () => {
   }
 
   useEffect(() => {
-    cabinetPartsData &&
-      cabinetPartsData?.length > 0 &&
-      cabinetPartsData.map((item, index) => {
-         organizeObjectsByVariant(cabinetPartsData);
+    cabinetSharedState &&
+    cabinetSharedState?.length > 0 &&
+    cabinetSharedState.map((item, index) => {
+         organizeObjectsByVariant(cabinetSharedState);
       });
   }, []);
 

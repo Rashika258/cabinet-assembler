@@ -12,19 +12,67 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  position: relative;
 }
 
+.hide {
+  display: none;
+}
 .carousel-container {
-  width: 100%;
-}
-
-.react-multi-carousel-list {
-  padding: 0rem 0 2rem 0;
   width: 100%;
 }
 
 .react-multi-carousel-track {
   display: flex;
+  list-style: none;
+  margin-left: 35px;
+}
+
+.button__wrap {
+  width: 100%;
+  position: absolute;
+  align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.right__arrow-wrap {
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  position: absolute;
+  top: 40%;
+  left: 95%;
+  z-index: 22222222;
+}
+
+.right__arrow {
+  height: 30px;
+  width: 30px;
+  cursor: pointer;
+}
+
+.left__arrow {
+  height: 30px;
+  width: 30px;
+  cursor: pointer;
+}
+
+.left__arrow-wrap {
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  position: absolute;
+  top: 40%;
+  right: 95%;
+  z-index: 22222222;
+}
+
+.carousel__container {
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
   height: 100%;
 }
 

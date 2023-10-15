@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef } from "react";
 import "./PartsSelection.css";
 import Carousel from "react-multi-carousel";
 import { cabinetPartsData } from "../../data";
@@ -7,6 +7,25 @@ import leftArrow from "../../assets/left-arrow.png";
 import rightArrow from "../../assets/right-arrow.png";
 
 export default function PartsSelection() {
+  const carouselRef = useRef(null);
+
+  const handlePrevious = () => {
+    const isAtFirstSlide = carouselRef.current.state.currentSlide === 0;
+
+    if (isAtFirstSlide) {
+      carouselRef.current.goToSlide(cabinetPartsData.length - 1);
+    } else {
+      carouselRef.current.previous();
+    }
+  };
+
+  const handleNext = () => {
+    const currentSlide = carouselRef.current.state.currentSlide;
+    const nextSlide =
+      currentSlide === cabinetPartsData.length - 1 ? 0 : currentSlide + 1;
+    carouselRef.current.goToSlide(nextSlide, true);
+  };
+
   const responsive = {
     desktop: {
       breakpoint: {
@@ -14,7 +33,6 @@ export default function PartsSelection() {
         min: 1024,
       },
       items: 3,
-      partialVisibilityGutter: 40,
     },
     mobile: {
       breakpoint: {
@@ -22,7 +40,6 @@ export default function PartsSelection() {
         min: 0,
       },
       items: 1,
-      partialVisibilityGutter: 30,
     },
     tablet: {
       breakpoint: {
@@ -30,42 +47,54 @@ export default function PartsSelection() {
         min: 464,
       },
       items: 2,
-      partialVisibilityGutter: 30,
     },
   };
 
-  const CustomLeftArrow = ({ previous }) => {
-    return (
-      <div
-        style={{
-          textAlign: "center",
-          position: "relative",
-        }}
-      >
-        <img
-          src={leftArrow}
-          classNameName="left__arrow"
-          alt="left"
-          onClick={previous}
-        />
-      </div>
-    );
-  };
+  const ButtonGroup = ({
+    next,
+    previous,
+    goToSlide,
+    handleNext,
+    handlePrevious,
+    length,
+    ...rest
+  }) => {
+    const {
+      carouselState: { currentSlide },
+    } = rest;
 
-  const CustomRightArrow = ({ next }) => {
+    console.log("currentSlide", currentSlide);
+
     return (
-      <div
-        style={{
-          textAlign: "center",
-          position: "relative",
-        }}
-      >
-        <img
-          src={rightArrow}
-          classNameName="right__arrow"
-          alt="right"
-          onClick={next}
-        />
+      <div className="button__wrap">
+        <div
+          className={
+            // currentSlide === 0 ? "left__arrow-wrap hide" :
+            "left__arrow-wrap"
+          }
+        >
+          <img
+            src={leftArrow}
+            className="left__arrow"
+            alt="left"
+            onClick={() => handlePrevious()}
+          />
+        </div>
+        <div
+          className={
+            // currentSlide === length
+            //   ? "right__arrow-wrap hide"
+            //   :
+            "right__arrow-wrap"
+          }
+        >
+          <img
+            src={rightArrow}
+            className="right__arrow"
+            alt="right"
+            onClick={() => handleNext()}
+          />
+        </div>
       </div>
     );
   };
@@ -74,34 +103,41 @@ export default function PartsSelection() {
     <div className="parts__selection__container">
       <div className="parts__selection__carousel-wrap">
         <Carousel
+          key="carousel-parts"
           additionalTransfrom={0}
-          arrows
-          autoPlaySpeed={3000}
+          arrows={false}
+          ref={carouselRef}
+          autoPlaySpeed={0}
           centerMode={false}
-          classNameName=""
-          containerclassName=""
-          dotListclassName=""
+          className=""
+          containerClass="carousel__container"
+          dotListClass=""
           draggable
           focusOnSelect={false}
           infinite={false}
           itemclassName=""
           keyBoardControl
           minimumTouchDrag={80}
+          infiniteLoop={true}
           pauseOnHover
           renderArrowsWhenDisabled={false}
-          renderButtonGroupOutside={false}
+          renderButtonGroupOutside={true}
           renderDotsOutside={false}
           responsive={responsive}
-          rewind={false}
-          rewindWithAnimation={false}
-          rtl={false}
-          shouldResetAutoplay
           showDots={false}
           sliderclassName=""
           slidesToSlide={1}
           swipeable
-          customLeftArrow={<CustomLeftArrow />}
-          customRightArrow={<CustomRightArrow />}
+          partialVisbile={false}
+          shouldResetAutoplay={false}
+          autoPlay={false}
+          customButtonGroup={
+            <ButtonGroup
+              handleNext={handleNext}
+              handlePrevious={handlePrevious}
+              length={cabinetPartsData.length}
+            />
+          }
         >
           {cabinetPartsData &&
             cabinetPartsData.length > 0 &&
