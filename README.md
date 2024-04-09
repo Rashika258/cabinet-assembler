@@ -6,6 +6,8 @@ Welcome to the Cabinet Assembler App! This web application allows users to desig
 
 You can access the live version of the app here: [Cabinet Assembler App](https://652b79b734035d38faa440b5--melodic-sunflower-8e9165.netlify.app/)
 
+https://melodic-sunflower-8e9165.netlify.app/
+
 ## Features
 
 - **Interactive Cabinet Design:** Design custom cabinets with different dimensions, styles, and configurations.
